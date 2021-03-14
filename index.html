@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jQuery Functions</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="jquery.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="addClass" class="btn">Add Class</button>
+                    <button id="removeClass" class="btn">Remove Class</button>
+                </div>
+                <div
+                    class="col-md-8 d-flex justify-content-center flex-column"
+                    id="1"
+                >
+                    <h1>Add Class / Remove Class</h1>
+                    <p>
+                        Click the first button to add class 'fancy' to this
+                        column.
+                    </p>
+                    <p>
+                        Click the second button to remove class 'fancy' from
+                        this column.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="hideContent" class="btn">Hide</button>
+                    <button id="showContent" class="btn">Show</button>
+                </div>
+                <div class="col-md-8 d-flex justify-content-center flex-column">
+                    <div id="2">
+                        <h1>Hide / Show</h1>
+                        <p>
+                            Click the first button to hide content of this
+                            column.
+                        </p>
+                        <p>
+                            Click the second button to show content of this
+                            column.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="toggleContent" class="btn">Toggle</button>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center flex-column">
+                    <h1>Toggle</h1>
+                    <p>Click the button to toggle the bulldog.</p>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <img class="round" id="3" src="img/bulldog.jpg" alt="French bulldog" />
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="slideToggleContent" class="btn">
+                        Slide Toggle
+                    </button>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center flex-column">
+                    <h1>Slide Toggle</h1>
+                    <p>Click the button to slide toggle the boxer.</p>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <img class="round" id="4" src="img/boxer.jpg" alt="Boxer" />
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="slideDown" class="btn">Slide Down</button>
+                    <button id="slideUp" class="btn">Slide Up</button>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center flex-column">
+                    <h1>Slide Down / Slide Up</h1>
+                    <p>Click the first button to slide something down.</p>
+                    <p>Click the second button to slide this up.</p>
+                </div>
+                <div class="col-md-3">
+                    <img class="hidden" id="5" src="img/food.jpg" alt="fruits" />
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="fadeIn" class="btn">Fade In</button>
+                    <button id="fadeOut" class="btn">Fade Out</button>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center flex-column">
+                    <h1>Fade In / Fade Out</h1>
+                    <p>Click the first button to fade something in.</p>
+                    <p>Click the second button to fade this out.</p>
+                </div>
+                <div class="col-md-3">
+                    <img class="hidden" id="6" src="img/apple.jpg" alt="apple" />
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="beforeContent" class="btn">Before</button>
+                    <button id="afterContent" class="btn">After</button>
+                </div>
+                <div
+                    class="col-md-8 d-flex justify-content-center flex-column"
+                    id="7"
+                >
+                    <h1>Before / After</h1>
+                    <p>
+                        Click the first button to add something before this
+                        paragraph.
+                    </p>
+                    <p>
+                        Click the second button to add something after this
+                        paragraph.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="prependContent" class="btn">Prepend</button>
+                    <button id="appendContent" class="btn">Append</button>
+                </div>
+                <div
+                    class="col-md-8 d-flex justify-content-center flex-column"
+                    id="8"
+                >
+                    <h1>Prepend / Append</h1>
+                    <p>
+                        Click the first button to prepend something to this
+                        paragraph.
+                    </p>
+                    <p>
+                        Click the second button to append something to this
+                        paragraph.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="htmlContent" class="btn">HTML</button>
+                    <button id="textContent" class="btn">Text</button>
+                </div>
+                <div
+                    class="col-md-5 d-flex justify-content-center flex-column"
+                >
+                    <h1>HTML / Text</h1>
+                    <p>
+                        Click the first button to add something fancy.
+                    </p>
+                    <p>
+                        Click the second button to add something plain.
+                    </p>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center" id="9">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="getAttr" class="btn">Get Attribute</button>
+                    <button id="setAttr" class="btn">Set Attribute</button>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center flex-column" id="10a">
+                    <h1>Attribute</h1>
+                    <p>Click the first button to see what's on the picture: <span class="addition"></span></p>
+                    <p>Click the second button to see the picture itself.</p>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <img id="10b" alt="" title="Chocolate and raspberries!"/>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                    <button id="getVal" class="btn">Get Value</button>
+                    <button id="setVal" class="btn">Set Value</button>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center flex-column" id="11a">
+                    <h1>Value</h1>
+                    <p>Click the first button to see the value of the input: <span class="addition"></span>.</p>
+                    <p>Click the second button to set another value to the input.</p>
+                </div>
+                <div class="col-md-3 align-items-center d-flex justify-content-center">
+                    <input class="form-control" id="11b" value="A really great value"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
